@@ -1,3 +1,3 @@
 document.getElementById('startButton').addEventListener('click', function() {
-    alert('مرحبًا بك في امبراطوريتنا! 🚀');
+    window.location.href = "https://wa.me/رقم_واتساب_هنا";
 });
