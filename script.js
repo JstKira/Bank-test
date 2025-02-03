@@ -1,3 +1,3 @@
 document.getElementById('startButton').addEventListener('click', function() {
-    alert('مرحبًا بك في مملكتي! 🚀');
+    alert('مرحبًا بك في امبراطوريتنا! 🚀');
 });
