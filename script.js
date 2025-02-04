@@ -39,3 +39,21 @@ function buyItem(itemName, itemPrice) {
 document.addEventListener("DOMContentLoaded", () => {
     updateInventory(); // تحديث الحقيبة عند فتح الموقع
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".toggle-btn");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            const details = button.nextElementSibling;
+            const arrow = button.querySelector("span");
+
+            if (details.style.display === "block") {
+                details.style.display = "none";
+                arrow.textContent = "⬇️";
+            } else {
+                details.style.display = "block";
+                arrow.textContent = "⬆️";
+            }
+        });
+    });
+});
