@@ -1,47 +1,177 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>إمبراطورية لاست للأنمي</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>امبراطورية لاست </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ffcc00;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        section {
+            padding: 20px;
+        }
+        .box {
+            background-color: #2c2c2c;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .box h2 {
+            color: #ffcc00;
+        }
+        .item {
+            background-color: #444;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .item h3 {
+            margin: 0;
+            color: #ffcc00;
+        }
+        .item p {
+            margin: 5px 0;
+        }
+        .btn {
+            background-color: #ffcc00;
+            color: #1e1e1e;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #e6b800;
+        }
+        footer {
+            background-color: #333;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 0;
+            color: #ffcc00;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>إمبراطورية لاست للأنمي</h1>
+        <h1>امبراطورية لاست</h1>
         <nav>
-            <ul>
-                <li><a href="#gate">البوابة</a></li>
-                <li><a href="#about">تبذة عن الإمبراطورية</a></li>
-                <li><a href="#system">نظام المصنف</a></li>
-                <li><a href="#bag">حقيبة المصنف</a></li>
-            </ul>
+            <a href="#about">نبذة عنا</a>
+            <a href="#portal">البوابة</a>
+            <a href="#classifieds">المصنفين</a>
+            <a href="#store">المتجر</a>
+            <a href="#inventory">حقيبتي</a>
         </nav>
     </header>
-    
-    <section id="gate" class="hero">
-        <h2>البوابة الرئيسية</h2>
-        <p>ادخل إلى عالم الأنمي حيث تبدأ المغامرة!</p>
-        <a href="https://chat.whatsapp.com/رمز_الدعوة" class="btn">ادخل الآن</a>
+
+    <section id="about" class="box">
+        <h2>نبذة عنا</h2>
+        <p>مرحبًا بكم في امبراطورية لاست، قروب الأنمي الخاص بنا! نحن مجتمع من عشاق الأنمي الذين يجتمعون لمشاركة الأفكار والمناقشات والمتعة. انضم إلينا واستمتع بتجربة فريدة!</p>
     </section>
-    
-    <section id="about">
-        <h2>من نحن؟</h2>
-        <p>إمبراطورية لاست هي أكبر مملكة لعشاق الأنمي على واتساب، تجمع بين الإثارة، المبارزات، والأخبار الحصرية.</p>
+
+    <section id="portal" class="box">
+        <h2>البوابة</h2>
+        <p>اضغط على الرابط أدناه للدخول إلى بوابتنا:</p>
+        <a href="https://chat.whatsapp.com/DNPtiKMVjp9Eg9ej2GtgMy" target="_blank" style="color: #ffcc00;">الدخول إلى البوابة</a>
     </section>
-    
-    <section id="system">
-        <h2>نظام المصنف</h2>
-        <p>نظام متكامل لتصنيف المقاتلين، اجمع النقاط وارتقِ في مراتب الإمبراطورية!</p>
+
+    <section id="classifieds" class="box">
+        <h2>المصنفين</h2>
+        <div class="item">
+            <h3>المصنف 1</h3>
+            <p>وصف المصنف 1 هنا.</p>
+        </div>
+        <div class="item">
+            <h3>المصنف 2</h3>
+            <p>وصف المصنف 2 هنا.</p>
+        </div>
     </section>
-    
-    <section id="bag">
-        <h2>حقيبة المصنف</h2>
-        <p>احصل على أدواتك الخاصة، شاراتك الفريدة، والمكافآت داخل عالم الإمبراطورية!</p>
+
+    <section id="store" class="box">
+        <h2>المتجر</h2>
+        <div class="item">
+            <h3>سيف النور</h3>
+            <p>سلاح أسطوري يمنحك قوة خارقة!</p>
+            <p>السعر: 150 نقطة</p>
+            <button class="btn" onclick="buyItem('سيف النور')">شراء</button>
+        </div>
+        <div class="item">
+            <h3>درع الظلام</h3>
+            <p>درع يحميك من كل الأضرار السحرية.</p>
+            <p>السعر: 200 نقطة</p>
+            <button class="btn" onclick="buyItem('درع الظلام')">شراء</button>
+        </div>
     </section>
-    
+
+    <section id="inventory" class="box">
+        <h2>حقيبتي</h2>
+        <div id="inventoryList">
+            <p>لم تشترِ أي عناصر بعد.</p>
+        </div>
+    </section>
+
     <footer>
-        <p>© 2025 إمبراطورية لاست للأنمي - جميع الحقوق محفوظة</p>
+        <p>&copy; 2025 امبراطورية لاست - جميع الحقوق محفوظة</p>
     </footer>
+
+    <script>
+        let inventory = [];
+
+        function buyItem(itemName) {
+            inventory.push(itemName);
+            updateInventory();
+        }
+
+        function updateInventory() {
+            let inventoryDiv = document.getElementById("inventoryList");
+            if (inventory.length === 0) {
+                inventoryDiv.innerHTML = "<p>لم تشترِ أي عناصر بعد.</p>";
+            } else {
+                inventoryDiv.innerHTML = "";
+                inventory.forEach(item => {
+                    let div = document.createElement("div");
+                    div.classList.add("item");
+                    div.innerHTML = `<h3>${item}</h3>`;
+                    inventoryDiv.appendChild(div);
+                });
+            }
+        }
+    </script>
+
 </body>
 </html>
