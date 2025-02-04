@@ -45,14 +45,12 @@ document.addEventListener("DOMContentLoaded", () => {
     buttons.forEach(button => {
         button.addEventListener("click", () => {
             const details = button.nextElementSibling;
-            const arrow = button.querySelector("span");
+            button.classList.toggle("active"); // يغير شكل السهم
 
             if (details.style.display === "block") {
                 details.style.display = "none";
-                arrow.textContent = "⬇️";
             } else {
                 details.style.display = "block";
-                arrow.textContent = "⬆️";
             }
         });
     });
