@@ -3,175 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>امبراطورية لاست </title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #1e1e1e;
-            color: #fff;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: #ffcc00;
-        }
-        nav {
-            margin: 20px 0;
-        }
-        nav a {
-            color: #ffcc00;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2em;
-        }
-        section {
-            padding: 20px;
-        }
-        .box {
-            background-color: #2c2c2c;
-            margin: 20px auto;
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 800px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .box h2 {
-            color: #ffcc00;
-        }
-        .item {
-            background-color: #444;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .item h3 {
-            margin: 0;
-            color: #ffcc00;
-        }
-        .item p {
-            margin: 5px 0;
-        }
-        .btn {
-            background-color: #ffcc00;
-            color: #1e1e1e;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        .btn:hover {
-            background-color: #e6b800;
-        }
-        footer {
-            background-color: #333;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-        }
-        footer p {
-            margin: 0;
-            color: #ffcc00;
-        }
-    </style>
+    <title>إمبراطورية لاست - القروب الأسطوري</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>امبراطورية لاست</h1>
-        <nav>
-            <a href="#about">نبذة عنا</a>
-            <a href="#portal">البوابة</a>
-            <a href="#classifieds">المصنفين</a>
-            <a href="#store">المتجر</a>
-            <a href="#inventory">حقيبتي</a>
-        </nav>
-    </header>
+    <div class="overlay"></div>
+    <div class="container">
+        <header>
+            <h1>إمبراطورية لاست</h1>
+            <nav>
+                <a href="#about">🏰 نبذة</a>
+                <a href="#portal">🚪 البوابة</a>
+                <a href="#classifieds">🎖️ المصنفين</a>
+                <a href="#store">🛒 المتجر</a>
+                <a href="#inventory">🎒 الحقيبة</a>
+            </nav>
+        </header>
 
-    <section id="about" class="box">
-        <h2>نبذة عنا</h2>
-        <p>مرحبًا بكم في امبراطورية لاست، قروب الأنمي الخاص بنا! نحن مجتمع من عدة ممالك حيث يجتمعون بحثًا عن المتعة. انضم إلينا واستمتع بتجربة فريدة!</p>
-    </section>
+        <!-- 🏰 قسم النبذة -->
+        <section id="about">
+            <h2>🏰 نبذة عن الإمبراطورية</h2>
+            <p>مرحبًا بك في إمبراطورية لاست، القروب الأقوى لعشاق الأنمي! انضم إلى المجتمع واستمتع بالمنافسات والتحديات والمزيد.</p>
+        </section>
 
-    <section id="portal" class="box">
-        <h2>البوابة</h2>
-        <p>اضغط على الرابط أدناه للدخول إلى بوابتنا:</p>
-        <a href="https://chat.whatsapp.com/DNPtiKMVjp9Eg9ej2GtgMy" target="_blank" style="color: #ffcc00;">الدخول إلى البوابة</a>
-    </section>
+        <!-- 🚪 قسم البوابة -->
+        <section id="portal">
+            <h2>🚪 البوابة</h2>
+            <a href="https://example.com" class="button">الدخول إلى البوابة</a>
+        </section>
 
-    <section id="classifieds" class="box">
-        <h2>المصنفين</h2>
-        <div class="item">
-            <h3>المصنف 1</h3>
-            <p>وصف المصنف 1 هنا.</p>
-        </div>
-        <div class="item">
-            <h3>المصنف 2</h3>
-            <p>وصف المصنف 2 هنا.</p>
-        </div>
-    </section>
+        <!-- 🎖️ قسم المصنفين -->
+        <section id="classifieds">
+            <h2>🎖️ المصنفين</h2>
+            <div class="card">🏆 المصنف 1 - التفاصيل هنا</div>
+            <div class="card">🥈 المصنف 2 - التفاصيل هنا</div>
+        </section>
 
-    <section id="store" class="box">
-        <h2>المتجر</h2>
-        <div class="item">
-            <h3>الصنف الاول</h3>
-            <p>الشرح!</p>
-            <p>السعر</p>
-            <button class="btn" onclick="buyItem('سيف النور')">شراء</button>
-        </div>
-        <div class="item">
-            <h3>درع الظلام</h3>
-            <p>درع يحميك من كل الأضرار السحرية.</p>
-            <p>السعر: 200 نقطة</p>
-            <button class="btn" onclick="buyItem('درع الظلام')">شراء</button>
-        </div>
-    </section>
+        <!-- 🛒 قسم المتجر -->
+        <section id="store">
+            <h2>🛒 متجر الإمبراطورية</h2>
+            <div class="shop">
+                <div class="item">
+                    <h3>👑 لقب ملكي</h3>
+                    <p>احصل على لقب نادر يميزك بين الأعضاء.</p>
+                    <button class="buy-button">شراء</button>
+                </div>
+                <div class="item">
+                    <h3>💎 نقاط VIP</h3>
+                    <p>اربح نقاط VIP لفتح ميزات حصرية.</p>
+                    <button class="buy-button">شراء</button>
+                </div>
+            </div>
+        </section>
 
-    <section id="inventory" class="box">
-        <h2>حقيبتي</h2>
-        <div id="inventoryList">
-            <p>لم تشترِ أي عناصر بعد.</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 امبراطورية لاست - جميع الحقوق محفوظة</p>
-    </footer>
-
-    <script>
-        let inventory = [];
-
-        function buyItem(itemName) {
-            inventory.push(itemName);
-            updateInventory();
-        }
-
-        function updateInventory() {
-            let inventoryDiv = document.getElementById("inventoryList");
-            if (inventory.length === 0) {
-                inventoryDiv.innerHTML = "<p>لم تشترِ أي عناصر بعد.</p>";
-            } else {
-                inventoryDiv.innerHTML = "";
-                inventory.forEach(item => {
-                    let div = document.createElement("div");
-                    div.classList.add("item");
-                    div.innerHTML = `<h3>${item}</h3>`;
-                    inventoryDiv.appendChild(div);
-                });
-            }
-        }
-    </script>
-
+        <!-- 🎒 قسم الحقيبة -->
+        <section id="inventory">
+            <h2>🎒 الحقيبة الخاصة بك</h2>
+            <ul class="inventory-list">
+                <li>📜 لقب النخبة</li>
+                <li>💠 500 نقطة VIP</li>
+                <li>⚔️ سلاح نادر</li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
