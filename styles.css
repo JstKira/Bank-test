@@ -1,9 +1,8 @@
 /* 🌌 خلفية الموقع مع الصورة */
 body {
     font-family: Arial, sans-serif;
-    background: url('lastEmbire.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: white;
+    background-color: #f4f4f4; /* لون رمادي فاتح */
+    color: #222; /* لون النص أسود تقريبًا */
     text-align: center;
     margin: 0;
     padding: 0;
