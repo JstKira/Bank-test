@@ -96,17 +96,23 @@ section {
     text-align: center;
 }
 
-/* 🛍️ زر الشراء */
+/* 🛍️ زر الشراء (تصميم شفاف مع نص ملون) */
 .buy-button {
-    background: #1e90ff; /* الأزرق */
-    border: none;
-    padding: 12px 20px;
-    font-size: 1.2em;
+    background: transparent; /* زر شفاف */
+    border: 2px solid #007bff; /* حدود بلون أزرق */
+    color: #007bff; /* لون النص أزرق */
+    padding: 8px 15px;
+    font-size: 1em;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: 0.3s;
+    font-weight: bold;
 }
 
+.buy-button:hover {
+    background: #007bff; /* عند التمرير يصبح الزر أزرق */
+    color: white; /* يصبح النص أبيض */
+}
 .buy-button:hover {
     background: #00bfff; /* الأزرق الفاتح */
 }
@@ -124,29 +130,36 @@ section {
     border-radius: 7px;
 }
 
-/* 🌟 زر المصنف المطور */
-.toggle-btn {
-    width: 100%;
-    background: linear-gradient(45deg, #1e90ff, #00bfff);
-    color: white;
+/* زر المصنفات (شفاف مع نص ملون وسهم) */
+.toggle-button {
+    background: transparent;
     border: none;
-    padding: 15px;
-    font-size: 1.3em;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 12px;
-    transition: 0.3s;
+    color: #007bff; /* لون النص */
+    font-size: 1.2em;
     font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    position: relative;
+    gap: 5px;
 }
 
-/* 🔽 السهم */
-.arrow {
-    font-size: 1.5em;
-    transition: transform 0.3s ease;
+.toggle-button::after {
+    content: "▼"; /* السهم */
+    font-size: 1em;
+    transition: transform 0.3s;
+}
+
+.toggle-button.active::after {
+    transform: rotate(180deg); /* عند الفتح يدور السهم للأعلى */
+}
+
+.classified-details {
+    display: none;
+    background: rgba(0, 123, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
 }
 
 /* 📜 تفاصيل المصنفات (مخفية افتراضيًا) */
