@@ -16,12 +16,54 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+/* 🎠 تحسين الكاروسيل */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: -100px; /* يجعل الكاروسيل فوق العنوان */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px; /* تحديد عرض الكاروسيل */
+    height: 100px; /* تحديد ارتفاع الكاروسيل */
+    border-radius: 10px;
+}
+
+.image-container {
+    display: flex;
+    width: 800%;
+    animation: slide 10s infinite linear;
+}
+
+.image-container img {
+    width: 50px; /* جعل الصور أصغر */
+    height: 50px;
+    margin: 0 5px;
+    border-radius: 10px;
+}
+
+/* 🎞️ تحريك الكاروسيل */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    12.5% { transform: translateX(-12.5%); }
+    25% { transform: translateX(-25%); }
+    37.5% { transform: translateX(-37.5%); }
+    50% { transform: translateX(-50%); }
+    62.5% { transform: translateX(-62.5%); }
+    75% { transform: translateX(-75%); }
+    87.5% { transform: translateX(-87.5%); }
+    100% { transform: translateX(0); }
 }
 
 /* 🎖️ تحسين عنوان الإمبراطورية */
 h1 {
     font-size: 2.5em;
     text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2);
+    margin-top: 60px; /* دفع العنوان للأسفل لإفساح المجال للكاروسيل */
 }
 
 /* 🛠️ تحسين شريط التنقل */
@@ -44,93 +86,6 @@ nav a {
 nav a:hover {
     background-color: #ffcc00;
     color: #000;
-}
-
-/* 🏆 تصميم زر المصنفات */
-.toggle-btn {
-    background: none;
-    border: 2px solid #ffcc00;
-    color: #ffcc00;
-    padding: 10px 15px;
-    font-size: 1.2em;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    border-radius: 5px;
-}
-
-.toggle-btn:hover {
-    background-color: #ffcc00;
-    color: #000;
-}
-
-.toggle-btn .arrow {
-    transition: transform 0.3s;
-}
-
-.toggle-btn.active .arrow {
-    transform: rotate(180deg);
-}
-
-/* ✨ تحسين تفاصيل المصنف */
-.details {
-    display: none;
-    padding: 10px;
-    border-top: 2px solid #ffcc00;
-    margin-top: 5px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-}
-
-/* 🎒 تحسين الحقيبة */
-.inventory-list {
-    list-style: none;
-    padding: 0;
-}
-
-.inventory-list li {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-}
-
-/* 🎠 تحسين الكاروسيل */
-.carousel {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-.image-container {
-    display: flex;
-    width: 800%;
-    animation: slide 10s infinite linear;
-}
-
-.image-container img {
-    width: 12.5%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* 🎞️ تحريك الكاروسيل */
-@keyframes slide {
-    0% { transform: translateX(0); }
-    12.5% { transform: translateX(-12.5%); }
-    25% { transform: translateX(-25%); }
-    37.5% { transform: translateX(-37.5%); }
-    50% { transform: translateX(-50%); }
-    62.5% { transform: translateX(-62.5%); }
-    75% { transform: translateX(-75%); }
-    87.5% { transform: translateX(-87.5%); }
-    100% { transform: translateX(0); }
 }
 
 /* 🚪 تحسين زر البوابة */
