@@ -1,22 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
 <head>
-    <title>Infinite Carousel</title>⏳
-    <!-- link to css file -->⏳⏳
-    <link rel="stylesheet" href="style.css">⏳
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إمبراطورية لاست</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>⏳
-    <div class="carousel">⏳
-        <div class="image-container">⏳
-            <img src="image/1.jpg" alt="">
-            <img src="image/2.jpg" alt="">
-            <img src="image/3.jpg" alt="">
-            <img src="image/4.jpg" alt="">
-            <img src="image/5.jpg" alt="">
-            <img src="image/6.jpg" alt="">
-            <img src="image/7.jpg" alt="">
-            <img src="image/8.png" alt="">
-        </div>⏳
-    </div>⏳
+<body>
+
+    <div class="overlay"></div>
+    <div class="container">
+        <header>
+            <h1>إمبراطورية لاست</h1>
+            <nav>
+                <a href="classifieds.html">🎖️ المصنفين</a>
+                <a href="store.html">🛒 المتجر</a>
+                <a href="inventory.html">🎒 الحقيبة</a>
+            </nav>
+        </header>
+
+        <!-- 🏰 قسم النبذة -->
+        <section id="about">
+            <h2>🏰 نبذة عن الإمبراطورية</h2>
+            <p>إمبراطورية لاست هي أضخم اتحاد ممالك يضم العديد من الممالك العريقة، حيث يتنافسون في مجالات متنوعة.
+                تتسم الإمبراطورية بنظام موسمي متكامل وتنافسي بفضل التطوير المستمر والأفكار المتقنة، إمبراطورية لاست تجسد القوة، العظمة، المتعة، والمجد.</p>
+        </section>
+
+        <!-- 🎠 قسم الكاروسيل -->
+        <section id="carousel-section">
+            <h2>🎠 معرض الإمبراطورية</h2>
+            <div class="carousel">
+                <div class="image-container">
+                    <img src="image/1.jpg" alt="">
+                    <img src="image/2.jpg" alt="">
+                    <img src="image/3.jpg" alt="">
+                    <img src="image/4.jpg" alt="">
+                    <img src="image/5.jpg" alt="">
+                    <img src="image/6.jpg" alt="">
+                    <img src="image/7.jpg" alt="">
+                    <img src="image/8.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- 🚪 قسم البوابة -->
+        <section id="portal">
+            <h2>🚪 البوابة</h2>
+            <a href="https://chat.whatsapp.com/DNPtiKMVjp9Eg9ej2GtgMy" class="button">الدخول إلى البوابة</a>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
