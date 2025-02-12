@@ -1,11 +1,13 @@
 // 🏦 المتغيرات الأساسية
-let inventory = []; // الحقيبة الخاصة بالمستخدم
-let points = 500; // نقاط المستخدم المبدئية
+let inventory = [];
+let points = 500;
 
 // 📌 تحديث عرض الحقيبة
 function updateInventory() {
     let inventoryList = document.getElementById("inventory-list");
-    inventoryList.innerHTML = ""; // مسح المحتوى القديم
+    if (!inventoryList) return; // تأكد من أن العنصر موجود
+
+    inventoryList.innerHTML = "";
 
     inventory.forEach(item => {
         let li = document.createElement("li");
@@ -13,23 +15,22 @@ function updateInventory() {
         inventoryList.appendChild(li);
     });
 
-    // تحديث عرض النقاط
     document.getElementById("points").textContent = `نقاطك: ${points}`;
 }
 
 // 🛒 شراء عنصر وإضافته للحقيبة
 function buyItem(itemName, itemPrice) {
     if (points >= itemPrice) {
-        points -= itemPrice; // خصم النقاط
+        points -= itemPrice;
         let existingItem = inventory.find(item => item.name === itemName);
 
         if (existingItem) {
-            existingItem.quantity += 1; // زيادة الكمية إذا كان العنصر موجودًا
+            existingItem.quantity += 1;
         } else {
-            inventory.push({ name: itemName, quantity: 1 }); // إضافة عنصر جديد
+            inventory.push({ name: itemName, quantity: 1 });
         }
 
-        updateInventory(); // تحديث الحقيبة
+        updateInventory();
     } else {
         alert("❌ ليس لديك نقاط كافية!");
     }
@@ -44,11 +45,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const details = button.nextElementSibling;
             button.classList.toggle("active");
 
-            if (details.style.display === "block") {
-                details.style.display = "none";
-            } else {
-                details.style.display = "block";
-            }
+            details.style.display = (details.style.display === "block") ? "none" : "block";
         });
     });
+
+    updateInventory(); // تحديث الحقيبة عند بدء التشغيل
 });
