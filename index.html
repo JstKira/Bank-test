@@ -1,55 +1,103 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>إمبراطورية لاست</title>
+    <title>إمبراطورية لاست </title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: white;
+            text-align: center;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 24px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        nav a {
+            margin: 15px;
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #ff6600;
+        }
+        .hero {
+            padding: 50px;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 40px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #ffcc00;
+            color: black;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background: #ff6600;
+        }
+    </style>
 </head>
 <body>
-
-    <div class="overlay"></div>
-    <div class="container">
-        <header>
-            <h1>إمبراطورية لاست</h1>
-            <nav>
-                <a href="classifieds.html">🎖️ المصنفين</a>
-                <a href="store.html">🛒 المتجر</a>
-                <a href="inventory.html">🎒 الحقيبة</a>
-            </nav>
-        </header>
-
-        <!-- 🏰 قسم النبذة -->
-        <section id="about">
-            <h2>🏰 نبذة عن الإمبراطورية</h2>
-            <p>إمبراطورية لاست هي أضخم اتحاد ممالك يضم العديد من الممالك العريقة، حيث يتنافسون في مجالات متنوعة.
-                تتسم الإمبراطورية بنظام موسمي متكامل وتنافسي بفضل التطوير المستمر والأفكار المتقنة، إمبراطورية لاست تجسد القوة، العظمة، المتعة، والمجد.</p>
-        </section>
-
-        <!-- 🎠 قسم الكاروسيل -->
-        <section id="carousel-section">
-            <h2>🎠 معرض الإمبراطورية</h2>
-            <div class="carousel">
-                <div class="image-container">
-                    <img src="image/1.jpg" alt="">
-                    <img src="image/2.jpg" alt="">
-                    <img src="image/3.jpg" alt="">
-                    <img src="image/4.jpg" alt="">
-                    <img src="image/5.jpg" alt="">
-                    <img src="image/6.jpg" alt="">
-                    <img src="image/7.jpg" alt="">
-                    <img src="image/8.png" alt="">
-                </div>
-            </div>
-        </section>
-
-        <!-- 🚪 قسم البوابة -->
-        <section id="portal">
-            <h2>🚪 البوابة</h2>
-            <a href="https://chat.whatsapp.com/DNPtiKMVjp9Eg9ej2GtgMy" class="button">الدخول إلى البوابة</a>
-        </section>
+    <header>
+        <h1>🧭 إمبراطورية لاست</h1>
+        <nav>
+            <a href="#store">🛒 المتجر</a>
+            <a href="#news">📰 الأخبار</a>
+            <a href="#arena">⚔️ التحديات</a>
+        </nav>
+    </header>
+    <div class="hero">
+        <p>أهلاً بك في إمبراطورية لاست! أقوى وأضخم عالم للممالك والتحديات.</p>
     </div>
-
-    <script src="script.js"></script>
+    <div class="container">
+        <div class="card" id="store">
+            <h2>🛒 المتجر</h2>
+            <p>احصل على أفضل الأدوات والعناصر لمملكتك.</p>
+            <a href="#" class="button">استكشف</a>
+        </div>
+        <div class="card" id="news">
+            <h2>📰 الأخبار</h2>
+            <p>تابع آخر المستجدات حول المعارك والتحالفات الجديدة.</p>
+            <a href="#" class="button">اقرأ المزيد</a>
+        </div>
+        <div class="card" id="arena">
+            <h2>⚔️ ساحة التحديات</h2>
+            <p>تنافس مع أقوى الممالك، واكسب المجد!</p>
+            <a href="#" class="button">ابدأ التحدي</a>
+        </div>
+    </div>
 </body>
 </html>
