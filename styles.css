@@ -1,10 +1,11 @@
 /* 🏰 تحسين الخلفية */
 body {
-    background-color: #1a1a2e; /* لون غامق للصفحة */
-    color: #fff; /* لون النص */
+    background-color: #1a1a2e;
+    color: #fff;
     font-family: "Tajawal", sans-serif;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 /* 📦 تنسيق الحاوية الرئيسية */
@@ -16,20 +17,16 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     text-align: center;
-    position: relative;
     margin-top: 20px;
 }
 
 /* 🎠 تحسين الكاروسيل */
 .carousel {
-    width: 100%;
     overflow: hidden;
-    position: absolute;
-    top: -100px; /* يجعل الكاروسيل فوق العنوان */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 400px; /* تحديد عرض الكاروسيل */
-    height: 100px; /* تحديد ارتفاع الكاروسيل */
+    position: relative;
+    width: 400px;
+    height: 100px;
+    margin: 20px auto;
     border-radius: 10px;
 }
 
@@ -40,7 +37,7 @@ body {
 }
 
 .image-container img {
-    width: 50px; /* جعل الصور أصغر */
+    width: 50px;
     height: 50px;
     margin: 0 5px;
     border-radius: 10px;
@@ -63,7 +60,7 @@ body {
 h1 {
     font-size: 2.5em;
     text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2);
-    margin-top: 60px; /* دفع العنوان للأسفل لإفساح المجال للكاروسيل */
+    margin-top: 60px;
 }
 
 /* 🛠️ تحسين شريط التنقل */
@@ -86,6 +83,23 @@ nav a {
 nav a:hover {
     background-color: #ffcc00;
     color: #000;
+}
+
+/* 🏰 تصميم البطاقات */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    display: inline-block;
+    margin: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 /* 🚪 تحسين زر البوابة */
