@@ -1,124 +1,56 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إمبراطورية لاست | الشخصيات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>إمبراطورية لاست</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">🏰 الرئيسية</a></li>
+                    <li><a href="characters.html">👥 الشخصيات</a></li>
+                    <li><a href="news.html">📰 الأخبار</a></li>
+                    <li><a href="store.html">🛒 المتجر</a></li>
+                    <li><a href="classified.html">🎖️ المصنفين</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
-    line-height: 1.6;
-}
+    <section class="characters">
+        <div class="container">
+            <h2>👥 الشخصيات الرئيسية</h2>
+            <div class="character-list">
+                <div class="character">
+                    <img src="images/character1.jpg" alt="الشخصية 1">
+                    <h3>اسم الشخصية 1</h3>
+                    <p>وصف موجز عن الشخصية ودورها في القصة.</p>
+                </div>
+                <div class="character">
+                    <img src="images/character2.jpg" alt="الشخصية 2">
+                    <h3>اسم الشخصية 2</h3>
+                    <p>وصف موجز عن الشخصية ودورها في القصة.</p>
+                </div>
+                <div class="character">
+                    <img src="images/character3.jpg" alt="الشخصية 3">
+                    <h3>اسم الشخصية 3</h3>
+                    <p>وصف موجز عن الشخصية ودورها في القصة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-/* Main header styles */
-.main-header {
-    background-color: #2c3e50;
-    color: #fff;
-    padding: 20px 0;
-}
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 إمبراطورية لاست | جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
 
-.main-header h1 {
-    text-align: center;
-    font-size: 2.5em;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin-top: 15px;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    font-size: 1.1em;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #f39c12;
-}
-
-/* Characters section styles */
-.characters {
-    background-color: #ecf0f1;
-    padding: 40px 0;
-}
-
-.characters h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 30px;
-}
-
-.character-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.character {
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.character:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-}
-
-.character img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.character h3 {
-    text-align: center;
-    font-size: 1.3em;
-    padding: 15px 0;
-    background-color: #34495e;
-    color: #fff;
-}
-
-.character p {
-    padding: 15px;
-    font-size: 1em;
-    text-align: center;
-}
-
-/* Footer styles */
-.main-footer {
-    background-color: #2c3e50;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.main-footer p {
-    font-size: 1em;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    .character-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .character {
-        width: 80%;
-    }
-}
+    <script src="script.js"></script>
+</body>
+</html> 
