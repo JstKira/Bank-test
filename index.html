@@ -1,50 +1,124 @@
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>إمبراطورية لاست - موقع عالمي</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>🌍 إمبراطورية لاست</h1>
-        <nav>
-            <a href="#store">🛒 المتجر</a>
-            <a href="#news">📰 الأخبار</a>
-            <a href="#arena">⚔️ التحديات</a>
-        </nav>
-    </header>
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <div class="carousel">
-        <div class="image-container">
-            <img src="1.jpg" alt="صورة 1">
-            <img src="2.jpg" alt="صورة 2">
-            <img src="3.jpg" alt="صورة 3">
-            <img src="4.jpg" alt="صورة 4">
-        </div>
-    </div>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
 
-    <div class="hero">
-        <p>أهلاً بك في إمبراطورية لاست! أقوى وأضخم عالم للممالك والتحديات.</p>
-    </div>
+/* Main header styles */
+.main-header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+}
 
-    <div class="container">
-        <div class="card" id="store">
-            <h2>🛒 المتجر</h2>
-            <p>احصل على أفضل الأدوات والعناصر لمملكتك.</p>
-            <a href="#" class="button">استكشف</a>
-        </div>
-        <div class="card" id="news">
-            <h2>📰 الأخبار</h2>
-            <p>تابع آخر المستجدات حول المعارك والتحالفات الجديدة.</p>
-            <a href="#" class="button">اقرأ المزيد</a>
-        </div>
-        <div class="card" id="arena">
-            <h2>⚔️ ساحة التحديات</h2>
-            <p>تنافس مع أقوى الممالك، واكسب المجد!</p>
-            <a href="#" class="button">ابدأ التحدي</a>
-        </div>
-    </div>
-</body>
-</html>
+.main-header h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 15px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Characters section styles */
+.characters {
+    background-color: #ecf0f1;
+    padding: 40px 0;
+}
+
+.characters h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.character-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.character {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.character:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.character img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.character h3 {
+    text-align: center;
+    font-size: 1.3em;
+    padding: 15px 0;
+    background-color: #34495e;
+    color: #fff;
+}
+
+.character p {
+    padding: 15px;
+    font-size: 1em;
+    text-align: center;
+}
+
+/* Footer styles */
+.main-footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.main-footer p {
+    font-size: 1em;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .character-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .character {
+        width: 80%;
+    }
+}
