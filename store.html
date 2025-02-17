@@ -3,36 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>متجر الإمبراطورية | إمبراطورية لاست</title>
+    <title>إمبراطورية لاست | المتجر</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="overlay"></div>
-    <div class="container">
-        <header>
+    <header class="main-header">
+        <div class="container">
             <h1>إمبراطورية لاست</h1>
             <nav>
-                <a href="index.html">🏰 العودة إلى الرئيسية</a>
-                <a href="#store">🛒 المتجر</a>
+                <ul>
+                    <li><a href="index.html">🏰 الرئيسية</a></li>
+                    <li><a href="characters.html">👥 الشخصيات</a></li>
+                    <li><a href="news.html">📰 الأخبار</a></li>
+                    <li><a href="store.html">🛒 المتجر</a></li>
+                    <li><a href="classified.html">🎖️ المصنفين</a></li>
+                </ul>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <!-- 🛒 قسم المتجر -->
-        <section id="store">
-            <h2>🛒 متجر الإمبراطورية</h2>
-            <div class="shop">
-                <div class="item">
-                    <h3>👑 لقب ملكي</h3>
-                    <p>احصل على لقب نادر يميزك بين الأعضاء.</p>
-                    <button class="buy-button">شراء</button>
+    <section class="store">
+        <div class="container">
+            <h2>🛒 متجر إمبراطورية لاست</h2>
+            <div class="store-items">
+                <div class="store-item">
+                    <img src="images/item1.jpg" alt="عنصر 1">
+                    <h3>عنوان العنصر 1</h3>
+                    <p>وصف العنصر 1 وميزاته.</p>
+                    <button>شراء</button>
                 </div>
-                <div class="item">
-                    <h3>💎 نقاط VIP</h3>
-                    <p>اربح نقاط VIP لفتح ميزات حصرية.</p>
-                    <button class="buy-button">شراء</button>
+                <div class="store-item">
+                    <img src="images/item2.jpg" alt="عنصر 2">
+                    <h3>عنوان العنصر 2</h3>
+                    <p>وصف العنصر 2 وميزاته.</p>
+                    <button>شراء</button>
+                </div>
+                <div class="store-item">
+                    <img src="images/item3.jpg" alt="عنصر 3">
+                    <h3>عنوان العنصر 3</h3>
+                    <p>وصف العنصر 3 وميزاته.</p>
+                    <button>شراء</button>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 إمبراطورية لاست | جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
